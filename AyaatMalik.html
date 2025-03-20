@@ -40,6 +40,7 @@
   <p>Hi! I'm Ayaat, a 9th grade students at JGS. Say hello!</p>
   <input id="Name" placeholder="Name">
 	<input id="Email" placeholder="Your email">
+	<input id="Grade" placeholder="Your grade">
   <input id="submit" type="submit">
 </body>
 <script type="module">
@@ -64,6 +65,7 @@
 	const db = getDatabase(app);
 	const Name = document.querySelector("#Name") 
 	const Email = document.querySelector("#Email")
+	const Grade = document.querySelector("#Grade")
 	document.querySelector('#submit').addEventListener('click', Submit)
 function Submit() {
 	 const timestamp = buildTimestamp()
@@ -75,6 +77,7 @@ function Submit() {
 
 	 Name.value = ""
 	 Email.value = ""
+	 Grade.value = ""
 	}
 
 	function buildTimestamp() {
