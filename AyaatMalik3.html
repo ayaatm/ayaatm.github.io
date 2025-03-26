@@ -71,6 +71,9 @@ small {
 .dessert{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3tP3ozdm4Z_EqIppG_HWOObmKJLXyxdh7gA&s");
 }
+.Bagel{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT53B3m9IAJK8uA1-coXvojhNpksy0tGPyuOQ&s");
+}
 .price {
   float: right;
 }
@@ -122,8 +125,14 @@ Often topped with honey, whipped cream, syrup or jam, they’re ideal for breakf
   
 <div class="dessert">
 <input type="number" min="0" style="width: 50px" class="quantities">
-  <p>Smoothies <span class="price">$8</span><br />
-  <small>Smoothies are essentially just a blended mixture of fruits, vegetables, liquid, and sometimes other ingredients such as nuts, seeds, oats, yogurt, and ice.</small></p>
+  <p>Hashbrowns <span class="price">$8</span><br />
+  <small>A perfect doughnut-shaped yeast-leavened roll that is characterized by a crisp, shiny crust. Eat it with the best cream cheese and your choice of jelly.</small></p>
+</div>
+
+<div class="Bagel">
+<input type="number" min="0" style="width: 50px" class="quantities">
+  <p>Bagels <span class="price">$10</span><br />
+  <small>Stacks of pancakes, with syrup drizzled over them.Their fluffy, soft texture is satisfying, providing a comforting mouthfeel. They also come with many toppings </small></p>
 </div>
 <br><br>
 <input id="Name" placeholder="Name">
@@ -160,7 +169,7 @@ Often topped with honey, whipped cream, syrup or jam, they’re ideal for breakf
 	const Email = document.querySelector("#Email")
 	const quantities = document.querySelectorAll(".quantities") 
 	const prices = document.querySelectorAll(".price") 
-	const itemsList = ["Pancakes", "Waffles", "Smoothies"]
+	const itemsList = ["Pancakes", "Waffles", "Smoothies", "Bagels"]
 	document.querySelector('#submit').addEventListener('click', Submit)
 	
 	
@@ -225,5 +234,8 @@ Often topped with honey, whipped cream, syrup or jam, they’re ideal for breakf
 			}
 			return units
 		}
+</script>
+</body>
+
 </script>
 </body>
